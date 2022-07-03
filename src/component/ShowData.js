@@ -38,8 +38,8 @@ function ShowData() {
             content: newContent
         }
         axios.put(`http://localhost:8080/todo/update/${id}`,newData);
-        console.log(...newData);
-
+        setShow(false);
+        window.location.reload()
 
 
     }
